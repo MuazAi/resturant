@@ -1,3 +1,10 @@
+
+:root{
+  --primary-color1:#495E57;
+  --primary-color2:#F4CE14;
+  --secondary-color2:#FDBABB;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +17,166 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.hero{
+  display: grid;
+  grid-template-columns:  repeat(12,1fr) ;
+  background-color: var(--primary-color1);
+}
+
+.hero article{
+  grid-column:4/ span 3;
+
+}
+.hero figure{
+  grid-column: 7/ span 3;
+
+  background-image: url('../public/assets/restauranfood.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 50%  ;
+  border-radius: 32px;
+  height: 500px;
+  position: relative;
+  top: 50px;
+}
+
+.title,.subtitle{
+  color: var(--primary-color2)
+}
+.title{
+  font-family: 'Markazi text';
+  font-size: 64px;
+}
+.subtitle{
+  font-size: 40px;
+}
+.hero p{
+  color:var(--secondary-color2);
+  width: 50%;
+}
+
+button.order{
+  width: 200px;
+  height: 60px;
+  background-color: var(--primary-color2);
+  border-radius: 5px;
+  border:none;
+  color:var(--primary-color1)
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  padding:10px 0;
+  align-items: center;
+}
+nav{
+  width:50vw;
+}
+nav ul{
+  display: flex;
+ flex-wrap: wrap;
+ 
+}
+nav li{
+  list-style-type: none;
+  flex:1;
+}
+nav li:last-child{
+
+}
+a{
+  text-decoration: none;
+}
+#highlight_seciton{
+  margin: 5rem 0;
+  
+  justify-content: center;
+}
+.header{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card img{
+  max-width: 300px;
+  border-radius: 10px 10px 0 0;
+  border:solid black 1px;
+}
+.card h1{
+  display: flex;
+  justify-content: space-between;
+}
+.card h1 span{
+  color: #EE9972;
+}
+
+.card{
+  background-color: rgb(211, 211, 211);
+  border-radius: 10px 10px 0 0;
+ 
+}
+.card-body{
+  padding: 0 10px;
+}
+
+#meals{
+  
+  width: 50vw;
+  column-gap: 20px;
+  overflow-x: auto;
+  margin:auto;
+  padding:4rem ;
+}
+.card-footer{
+  display: flex;
+  column-gap: 5px;
+  align-items: center;
+}
+i{
+  font-size: 5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.block{
+  display: block;
+
+}
+
+.testmonial{
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+}
+.testmonial .card{
+  padding:0 20px;
+  align-items: center;
+  width: 200px;
+
+}
+
+.testmonial .card p{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:24px;
+  font-weight: bolder;
+}
+
+.testmonial .card img{
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+
+}
+.testmonial .card h4{
+  font-size:18px;
+  font-weight: normal;
 }
