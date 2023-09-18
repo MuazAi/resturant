@@ -1,3 +1,4 @@
+import BookingPage from "./BookingPage";
 import CoustomersSay from "./CustomerSay";
 import Specials from "./Specials";
 import About from "./components/About";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Specials />
       <CoustomersSay />
+
       <About />
     </>
   );

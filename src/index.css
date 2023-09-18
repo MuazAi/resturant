@@ -180,3 +180,40 @@ i{
   font-size:18px;
   font-weight: normal;
 }
+#reservation-form{
+  display: grid;
+
+    justify-content: center;
+}
+#reservation-form form{
+  display: grid;
+  row-gap: 1rem;
+  width: 25vw;
+} 
+#reservation-form form label{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 5px;
+}
+#reservation-form form input{
+  height: 40px;
+  border-radius: 10px;
+  padding:0 1rem;
+  font-size: large;
+}
+#chair-button , .action-button{
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
+  align-items: center;
+  color: wheat;
+  border-radius: 10px;
+  background-color: var(--primary-color1);
+}
+
+#chair-button span{
+  font-size: 2rem;
+  cursor: pointer;
+}

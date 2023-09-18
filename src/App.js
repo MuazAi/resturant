@@ -7,6 +7,7 @@ import HighLight from "./components/HighLight";
 import Home from "./Home";
 import Testimonial from "./components/Testimonial";
 import { Routes, Route } from "react-router-dom";
+import BookingPage from "./BookingPage";
 function App() {
   return (
     <>
@@ -16,7 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />}></Route>
           <Route path="/menu" element={<HighLight />}></Route>
-          <Route path="/reservation" element={<Hero />}></Route>
+          <Route path="/reservation" element={<BookingPage />}></Route>
           <Route path="/order" element={<>order</>}></Route>
           <Route path="/login" element={<>Login</>}></Route>
         </Routes>
